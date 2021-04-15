@@ -1,0 +1,28 @@
+CREATE (person_1:Person{uid:1,fname:"Ted",lname:"Mosby"})
+CREATE (person_2:Person{uid:2,fname:"Barney",lname:"Stinston"})
+CREATE (person_3:Person{uid:3,fname:"Robin",lname:"Scherbatsky"})
+CREATE (person_4:Person{uid:4,fname:"Marshall",lname:"Eriksen"})
+CREATE (person_5:Person{uid:5,fname:"Lily",lname:"Aldrin"})
+
+
+CREATE (interest_1:Interest{id:1,name:"nosql"})
+CREATE (interest_2:Interest{id:2,name:"web server"})
+CREATE (interest_3:Interest{id:3,name:"cloud"})
+CREATE (interest_4:Interest{id:4,name:"architecture"})
+CREATE (interest_5:Interest{id:5,name:"law"})
+CREATE (interest_6:Interest{id:6,name:"teaching"})
+CREATE (interest_7:Interest{id:7,name:"journalism"})
+
+
+CREATE
+(person_1)-[:has]->(interest_1),
+(person_1)-[:has]->(interest_3),
+(person_1)-[:has]->(interest_4),
+(person_2)-[:has]->(interest_1),
+(person_2)-[:has]->(interest_6),
+(person_3)-[:has]->(interest_2),
+(person_3)-[:has]->(interest_7),
+(person_4)-[:has]->(interest_5),
+(person_4)-[:has]->(interest_6),
+(person_5)-[:has]->(interest_6)
+

@@ -1,0 +1,5 @@
+use symbichat
+show collections
+db.comments.insertOne({uid:NumberInt(1),fname:"Ted",lname:"Mosby",comment:"Hi I am great with AWS. Please let me know if someone is interested"})
+db.comments.remove({"uid":1})
+db.comments.delete()

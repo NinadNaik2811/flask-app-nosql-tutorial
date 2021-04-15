@@ -1,0 +1,13 @@
+use symbichat
+CREATE TABLE PERSON (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+fname VARCHAR(30),
+lname VARCHAR(30),
+email VARCHAR(50)
+);
+INSERT INTO PERSON(fname,lname,email) VALUES("Ted","Mosby","ted.mosby@sitpune.edu.in")
+INSERT INTO PERSON(fname,lname,email) VALUES("Barney","Stinson","barney.stinson@sitpune.edu.in");
+INSERT INTO PERSON(fname,lname,email) VALUES("Robin","Scherbatsky","robin.scherbatsky@sitpune.edu.in");
+INSERT INTO PERSON(fname,lname,email) VALUES("Marshall","Eriksen","marshall.eriksen@sitpune.edu.in");
+INSERT INTO PERSON(fname,lname,email) VALUES("Lily","Aldrin","lily.aldrin@sitpune.edu.in");
+
